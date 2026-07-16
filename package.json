@@ -9,7 +9,10 @@
     "lint": "eslint src",
     "lint:fix": "eslint src --fix",
     "typecheck": "tsc --noEmit",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest --coverage",
+    "test:ui": "vitest --ui"
   },
   "keywords": [],
   "author": "",
@@ -26,11 +29,15 @@
     "@eslint/js": "10.0.1",
     "@types/bcryptjs": "3.0.0",
     "@types/node": "26.1.1",
+    "@vitest/coverage-v8": "4.1.10",
+    "@vitest/ui": "4.1.10",
     "eslint": "10.6.0",
     "prisma": "4.10.1",
     "tsup": "8.5.1",
     "tsx": "4.23.0",
     "typescript": "6.0.3",
-    "typescript-eslint": "8.63.0"
+    "typescript-eslint": "8.63.0",
+    "vite-tsconfig-paths": "6.1.1",
+    "vitest": "4.1.10"
   }
 }
