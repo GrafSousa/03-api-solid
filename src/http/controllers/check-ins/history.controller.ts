@@ -19,5 +19,5 @@ export async function history(request: FastifyRequest, reply: FastifyReply) {
     userId: request.user.sub,
   });
 
-  return reply.code(201).send({ checkIns });
+  return reply.code(200).send({ checkIns });
 }
