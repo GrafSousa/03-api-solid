@@ -7,10 +7,7 @@ export function makeCheckInUseCase() {
   const checkInsRepository = new PrismaCheckInsRepository();
   const gymsRepository = new PrismaGymsRepository();
 
-  const getCheckInUseCase = new CheckInUseCase(
-    checkInsRepository,
-    gymsRepository,
-  );
+  const checkInUseCase = new CheckInUseCase(checkInsRepository, gymsRepository);
 
-  return { getCheckInUseCase };
+  return { checkInUseCase };
 }
