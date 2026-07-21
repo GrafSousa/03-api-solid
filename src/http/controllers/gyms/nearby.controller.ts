@@ -22,5 +22,5 @@ export async function nearby(request: FastifyRequest, reply: FastifyReply) {
     userLongitude: longitude,
   });
 
-  return reply.code(201).send({ gyms });
+  return reply.code(200).send({ gyms });
 }
