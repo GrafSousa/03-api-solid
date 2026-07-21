@@ -2,8 +2,8 @@ import z from 'zod';
 
 import { type FastifyReply, type FastifyRequest } from 'fastify';
 
-import { InvalidCredentialsError } from '../use-cases/errors/invalid-credentials-error';
-import { makeAuthenticateUseCase } from '../use-cases/factories/make-authenticate-use-case';
+import { InvalidCredentialsError } from '../../use-cases/errors/invalid-credentials-error';
+import { makeAuthenticateUseCase } from '../../use-cases/factories/make-authenticate-use-case';
 
 export async function authenticate(
   request: FastifyRequest,
